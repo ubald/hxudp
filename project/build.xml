@@ -37,8 +37,8 @@
 		<compilerflag value = "-W" if="macos"/>
 		<compilerflag value = "-fexceptions" if="macos"/>
 
-		<compilerflag value = "-march=native" if="linux"/>
-		<compilerflag value = "-mtune=native" if="linux"/>
+		<compilerflag value = "-march=native" if="linux" unless="rpi"/>
+		<compilerflag value = "-mtune=native" if="linux" unless="rpi"/>
 		<compilerflag value = "-finline-functions" if="linux"/>
 		<compilerflag value = "-funroll-all-loops" if="linux"/>
 		<compilerflag value = "-fexceptions" if="linux"/>

@@ -1,0 +1,8 @@
+{
+  "name": "hxudp",
+  "license": "MIT",
+  "releasenote": "",
+  "contributors": ["andyli"],
+  "version": "1.0.0",
+  "classPath": "src"
+}
