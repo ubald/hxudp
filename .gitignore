@@ -4,3 +4,5 @@ project/all_objs
 project/vc100.pdb
 
 .DS_Store
+# Built locally with haxelib run hxcpp build.xml
+ndll/
