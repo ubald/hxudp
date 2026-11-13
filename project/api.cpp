@@ -407,7 +407,7 @@ public:
 			fd_set fd;
 			FD_ZERO(&fd);
 			FD_SET(m_hSocket, &fd);
-			timeval	tv=	{m_dwTimeoutSend, 0};
+			timeval	tv=	{(time_t)m_dwTimeoutSend, 0};
 			if(select(m_hSocket+1,NULL,&fd,NULL,&tv)== 0)
 			{
 				ofxNetworkCheckError();
